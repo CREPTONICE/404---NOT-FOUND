@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #e7e9e2;
+    animation: Fadein 3s ease 1 forwards;
+}
+
+.wrapper {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.image {
+    padding: 5rem;
+}
+
+.img {
+    width: 600px;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #475569;
+}
+
+.ops,
+.pnf {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: -1px;
+    padding-bottom: 1rem;
+}
+
+.des{
+    color: #475569;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    border-color: #475569;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    color: #000000af;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes Fadein {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+}
+
+@media (max-width:1880px) { 
+    .img {
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width:1206px) {
+    .img {
+        width: 400px;
+    }
+}
+
+@media (max-width:1006px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .des {
+       font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width:954px) {
+    .des {
+       font-size: 1.2rem;
+    }
+}
+
+@media (max-width:928px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .img {
+        padding-top: 15rem;
+        padding-bottom: 0rem;
+    }
+
+    .image {
+        padding-bottom: 0;
+    }
+
+    .btn {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:535px) {
+    .img {
+        width: 300px;
+    }
+
+    .image {
+        padding-top: 0rem;
+    }
+}
+
+@media (max-width:440px) {
+    .img {
+       width: 200px;
+    }
+
+    .des {
+        letter-spacing: 1px;
+    }
+}
+
+
+@media (max-width:350px) {
+    .image {
+        padding: 1rem;
+    }
+
+    .des {
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width:320px) {
+    .container {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:310px) {
+    .des {
+        font-size: 1rem;
+    }
+}
