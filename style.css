@@ -169,7 +169,7 @@ body {
 }
 
 
-@media (max-width:340px) {
+@media (max-width:350px) {
     .image {
         padding: 1rem;
     }
