@@ -175,7 +175,7 @@ body {
     }
 
     .des {
-        letter-spacing: 0px;
+        letter-spacing: -0px;
         font-size: 0.8rem;
     }
 }
