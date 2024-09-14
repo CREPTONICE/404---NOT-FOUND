@@ -30,7 +30,7 @@ body {
 
 .img {
     width: 600px;
-    animation: Float 5s ease-in-out infinite;
+    animation: Float 5.5s ease-in-out infinite;
 }
 
 .title {
