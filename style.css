@@ -30,6 +30,7 @@ body {
 
 .img {
     width: 600px;
+    animation: Float 5s ease-in-out infinite;
 }
 
 .title {
@@ -47,7 +48,7 @@ body {
     padding-bottom: 1rem;
 }
 
-.des{
+.des {
     color: #475569;
     letter-spacing: 2px;
     font-size: 1.5rem;
@@ -62,7 +63,7 @@ body {
     font-weight: 500;
     padding: 0.5em 1em;
     color: #000000af;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .btn:hover {
@@ -71,16 +72,31 @@ body {
 }
 
 @keyframes Fadein {
-        0% {
-            opacity: 0;
-        }
+    0% {
+        opacity: 0;
+    }
 
-        100% {
-            opacity: 1;
-        }
+    100% {
+        opacity: 1;
+    }
 }
 
-@media (max-width:1880px) { 
+@keyframes Float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width:1880px) {
     .img {
         padding-top: 5rem;
     }
@@ -98,14 +114,14 @@ body {
     }
 
     .des {
-       font-size: 1.2rem;
+        font-size: 1.2rem;
     }
 
 }
 
 @media (max-width:954px) {
     .des {
-       font-size: 1.2rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -144,7 +160,7 @@ body {
 
 @media (max-width:440px) {
     .img {
-       width: 200px;
+        width: 200px;
     }
 
     .des {
@@ -167,9 +183,7 @@ body {
     .container {
         font-size: 0.9rem;
     }
-}
 
-@media (max-width:310px) {
     .des {
         font-size: 1rem;
     }
